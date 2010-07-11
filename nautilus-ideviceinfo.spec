@@ -1,7 +1,7 @@
 Summary:	Nautilus Property Page for iPhone/iPod Touch/iPad devices
 Name:		nautilus-ideviceinfo
 Version:	0.1.0
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		X11/Applications
 URL:		http://git.gnome.org/browse/nautilus-ideviceinfo
@@ -19,6 +19,7 @@ BuildRequires:	mobile-broadband-provider-info-devel >= 20100510-2
 BuildRequires:	nautilus-devel >= 2.21.2
 Requires:	libgpod >= 0.7.90
 Requires:	mobile-broadband-provider-info
+Requires:	nautilus >= 2.21.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -49,6 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS COPYING NEWS README
+%doc AUTHORS NEWS README
 %attr(755,root,root) %{_libdir}/nautilus/extensions-2.0/*.so
 %{_libdir}/nautilus/extensions-2.0/*.ui
