@@ -1,0 +1,22 @@
+--- nautilus-ideviceinfo-0.1.0/src/Makefile.am.mobile	2011-05-13 18:27:39.650542864 +0200
++++ nautilus-ideviceinfo-0.1.0/src/Makefile.am	2010-06-08 16:22:25.000000000 +0200
+@@ -3,6 +3,7 @@ INCLUDES = \
+ 	-DDATADIR=\"$(datadir)\" \
+ 	-DGNOMELOCALEDIR=\""$(datadir)/locale"\" \
+ 	-DNAUTILUS_EXTENSION_DIR=\"$(NAUTILUS_EXTENSION_DIR)\" \
++	-DMOBILE_BROADBAND_PROVIDER_INFO=\"$(MOBILE_BROADBAND_PROVIDER_INFO_DB_PATH)\" \
+ 	-I$(top_srcdir) \
+ 	-I$(top_builddir) \
+ 	$(GLOBAL_CFLAGS) \
+--- nautilus-ideviceinfo-0.1.0/configure.ac.mobile	2011-05-13 18:24:33.974882089 +0200
++++ nautilus-ideviceinfo-0.1.0/configure.ac	2011-05-13 18:26:54.414121264 +0200
+@@ -62,6 +62,9 @@ fi
+ NAUTILUS_EXTENSION_DIR=`$PKG_CONFIG --variable=extensiondir libnautilus-extension`
+ AC_SUBST(NAUTILUS_EXTENSION_DIR)
+ 
++MOBILE_BROADBAND_PROVIDER_INFO_DB_PATH=`$PKG_CONFIG --variable=database mobile-broadband-provider-info`
++AC_SUBST(MOBILE_BROADBAND_PROVIDER_INFO_DB_PATH)
++
+ AS_COMPILER_FLAGS(GLOBAL_CFLAGS, "-Wall -Wextra -Wmissing-declarations -Wredundant-decls -Wshadow -Wpointer-arith  -Wwrite-strings -Wswitch-default -Wno-unused-parameter")
+ AC_SUBST(GLOBAL_CFLAGS)
+ 
