@@ -1,7 +1,7 @@
 Summary:	Nautilus Property Page for iPhone/iPod Touch/iPad devices
 Name:		nautilus-ideviceinfo
 Version:	0.1.0
-Release:	6
+Release:	7
 License:	GPL v2+
 Group:		X11/Applications
 URL:		http://git.gnome.org/browse/nautilus-ideviceinfo
