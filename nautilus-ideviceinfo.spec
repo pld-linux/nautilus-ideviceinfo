@@ -11,7 +11,7 @@ Patch0:		%{name}-gtk3.patch
 Patch1:		%{name}-mobile-broadband-db-path.patch
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.14.1
 BuildRequires:	gtk+3-devel >= 3.0.0
 BuildRequires:	intltool
