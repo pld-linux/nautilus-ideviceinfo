@@ -1,3 +1,5 @@
+# TODO
+# - add mate (caja) package: https://bitbucket.org/ubuntu-mate/caja-ideviceinfo (separate .spec)
 Summary:	Nautilus Property Page for iPhone/iPod Touch/iPad devices
 Name:		nautilus-ideviceinfo
 Version:	0.1.0
