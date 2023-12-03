@@ -26,11 +26,11 @@ BuildRequires:	libplist-devel >= 2.2
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 2.6.30
 BuildRequires:	mobile-broadband-provider-info-devel >= 20100510-2
-BuildRequires:	nautilus-devel >= 3.0.0
+BuildRequires:	nautilus3-devel >= 3.0.0
 BuildRequires:	pkgconfig
 Requires:	libgpod >= 0.7.90
 Requires:	mobile-broadband-provider-info
-Requires:	nautilus >= 3.0.0
+Requires:	nautilus3 >= 3.0.0
 Requires:	usbmuxd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
